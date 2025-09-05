@@ -1,685 +1,772 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="es" class="no-js">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enrique Incio | Ingeniero de Software</title>
+  <meta name="description" content="Ingeniero de software. Creo soluciones modernas y mantenibles. Proyectos, experiencia y contacto." />
+  <meta name="author" content="Enrique Incio" />
+  <meta name="theme-color" content="#0ea5e9" />
 
-<!-- Meta -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Favicons existentes del proyecto -->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/manifest.json">
+  <meta name="msapplication-TileColor" content="#0ea5e9">
+  <meta name="msapplication-TileImage" content="assets/img/ms-icon-144x144.png">
 
-<!-- Title -->
-<title>Enrique Incio Chapilliquén - EV-Soft</title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Enrique Incio | Ingeniero de Software" />
+  <meta property="og:description" content="Proyectos y experiencia. Datos en vivo desde GitHub." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/avatars/profile.jpg" />
+  <meta property="og:url" content="/" />
 
-<!-- Favicons 
-<link rel="shortcut icon" href="assets/img/favicon.png">
--->
-<link rel="apple-touch-icon" sizes="57x57" href="assets/img/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="assets/img/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="assets/img/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="assets/img/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="assets/img/android-icon-192x192.png">
-<link rel="shortcut icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+  <!-- Datos estructurados -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Enrique Incio",
+    "image": "assets/img/avatars/profile.jpg",
+    "url": "https://github.com/eincioch",
+    "sameAs": ["https://github.com/eincioch","http://www.linkedin.com/in/enriqueincioch"],
+    "jobTitle": "Ingeniero de Software",
+    "description": "Diseño y construyo software moderno y mantenible."
+  }
+  </script>
 
-<link rel="apple-touch-icon" href="assets/img/favicon_60x60.png">
-<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon_76x76.png">
-<link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon_120x120.png">
-<link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon_152x152.png">
+  <style>
+    :root {
+      /* Modo claro (default) */
+      --bg: #f8fafc;            /* slate-50 */
+      --bg-soft: #ffffff;
+      --card: #ffffff;
+      --text: #0f172a;          /* slate-900 */
+      --muted: #475569;         /* slate-600 */
+      --primary: #0ea5e9;
+      --primary-600: #0284c7;
+      --ring: rgba(14,165,233,0.45);
+      --shadow: 0 10px 30px rgba(2,8,23,0.08);
+    }
 
-<!-- Google Web Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Lora:400,400i%7CPoppins:300,400,500,600" rel="stylesheet">
+    /* Overrides para modo oscuro */
+    .dark {
+      --bg: #0b1220;
+      --bg-soft: #0f172a;
+      --card: #0b1220;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --ring: rgba(14,165,233,0.4);
+      --shadow: 0 10px 30px rgba(2,8,23,0.4);
+    }
 
-<!-- CSS Styles -->
-<link rel="stylesheet" href="assets/css/styles.css" />
+    /* Suaviza la transición al cambiar de tema */
+    html, body, .card, .contact-card, .photo-frame, .site-header, .site-footer, .nav-links, .btn, .chip {
+      transition: background-color .25s ease, color .25s ease, border-color .25s ease;
+    }
 
-<!-- CSS Theme -->
-<link id="theme" rel="stylesheet" href="assets/css/themes/theme-serif-blue.css" />
+    html { color-scheme: dark light; scroll-behavior: smooth; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans";
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .container { width: min(1100px, 92%); margin: 0 auto; }
+    .section { padding: 72px 0; }
+    h1, h2 { line-height: 1.2; margin: 0 0 14px; }
+    h1 { font-size: clamp(28px, 6vw, 44px); }
+    h2 { font-size: clamp(20px, 4vw, 28px); }
+    .lead { font-size: clamp(16px, 2.6vw, 18px); opacity: 0.95; }
+    .muted { color: var(--muted); }
+    .kicker { color: var(--primary); text-transform: uppercase; font-size: 12px; letter-spacing: 0.18em; }
 
+    .skip-link {
+      position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;
+    }
+    .skip-link:focus { left: 8px; top: 8px; width: auto; height: auto; padding: 8px 10px; background: #111827; color: #fff; border-radius: 6px; }
+
+    .site-header {
+      position: sticky; top: 0; z-index: 40;
+      backdrop-filter: saturate(150%) blur(8px);
+      background: linear-gradient(180deg, rgba(2,6,23,0.75), transparent);
+      border-bottom: 1px solid rgba(148,163,184,0.1);
+    }
+    .nav { display: flex; justify-content: space-between; align-items: center; height: 64px; }
+    .brand { color: #fff; text-decoration: none; font-weight: 700; letter-spacing: .02em; }
+    .main-nav { position: relative; }
+    .nav-toggle {
+      display: none;
+      background: transparent; color: var(--text); border: 1px solid rgba(148,163,184,0.2);
+      padding: 8px 10px; border-radius: 8px;
+    }
+    .nav-links { display: flex; gap: 14px; list-style: none; margin: 0; padding: 0; align-items: center; }
+    .nav-links a, .btn-ghost { color: var(--text); text-decoration: none; }
+    .nav-links a:hover { color: #fff; }
+    @media (max-width: 820px) {
+      .nav-toggle { display: inline-flex; }
+      .nav-links { display: none; position: absolute; right: 0; top: 48px; background: #0b1220; padding: 12px; border: 1px solid rgba(148,163,184,0.2); border-radius: 10px; box-shadow: var(--shadow); flex-direction: column; align-items: flex-start; }
+      .nav-links.open { display: flex; }
+    }
+
+    .hero {
+      position: relative;
+      padding: 64px 0 40px;
+    }
+    .hero-grid { display: grid; grid-template-columns: 1.25fr .9fr; gap: 32px; align-items: center; }
+    .hero-cta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 12px; padding: 0; margin: 16px 0 0; list-style: none; color: var(--muted); font-size: 14px; }
+    .hero-photo { display: flex; justify-content: center; }
+    .photo-frame {
+      background: radial-gradient(1200px 60% at 20% -10%, rgba(14,165,233,0.18), transparent 55%),
+                  radial-gradient(900px 50% at 80% -10%, rgba(99,102,241,0.16), transparent 55%);
+      border-radius: 20px; padding: 16px; border: 1px solid rgba(148,163,184,0.18);
+    }
+    .photo-frame img { display: block; width: 100%; max-width: 360px; height: auto; border-radius: 14px; box-shadow: var(--shadow); }
+    .hero-bg {
+      position: absolute; inset: 0 0 auto 0; height: 50%;
+      background: radial-gradient(600px 50% at 10% -10%, rgba(14,165,233,0.12), transparent 60%),
+                  radial-gradient(600px 50% at 90% -20%, rgba(99,102,241,0.12), transparent 60%);
+      z-index: -1;
+    }
+    @media (max-width: 980px) { .hero-grid { grid-template-columns: 1fr; } }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+    @media (max-width: 980px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(148,163,184,0.15);
+      border-radius: 14px;
+      padding: 14px;
+      display: flex; flex-direction: column; gap: 10px;
+      transition: border-color .2s ease, transform .2s ease;
+    }
+    .card:hover { border-color: rgba(148,163,184,0.35); transform: translateY(-2px); }
+    .card h3 { margin: 0; font-size: 18px; }
+    .card .desc { color: var(--muted); font-size: 14px; }
+    .card .meta-row { display: flex; gap: 10px; color: var(--muted); font-size: 13px; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 10px 14px; border-radius: 10px; text-decoration: none; cursor: pointer;
+      border: 1px solid transparent; font-weight: 600; color: var(--text);
+    }
+    .btn-primary { background: var(--primary); color: #031018; }
+    .btn-primary:hover { background: var(--primary-600); }
+    .btn-outline { border-color: rgba(148,163,184,0.25); }
+    .btn-outline:hover { border-color: rgba(148,163,184,0.45); }
+    .btn-ghost { background: transparent; border: 1px solid rgba(148,163,184,0.25); }
+    .btn-ghost:hover { border-color: rgba(148,163,184,0.45); }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+    .chip {
+      border: 1px solid rgba(148,163,184,0.25); border-radius: 999px;
+      padding: 6px 10px; font-size: 13px;
+      background: linear-gradient(180deg, rgba(2,8,23,0.4), rgba(2,8,23,0.1));
+    }
+
+    .timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+    .timeline li,
+    .timeline .timeline-event {
+      padding: 12px; border: 1px solid rgba(148,163,184,0.2); border-radius: 12px; background: var(--card);
+    }
+    .timeline .role { font-weight: 700; }
+    .timeline .company { color: var(--muted); }
+    .timeline .summary { margin: 6px 0 0; opacity: .9; }
+
+    .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    @media (max-width: 640px) { .contact-grid { grid-template-columns: 1fr; } }
+    .contact-card {
+      display: flex; align-items: center; gap: 10px;
+      padding: 14px; border: 1px solid rgba(148,163,184,0.2); border-radius: 12px;
+      text-decoration: none; color: var(--text); background: var(--card);
+    }
+    .contact-card:hover { border-color: rgba(148,163,184,0.4); }
+
+    .site-footer {
+      padding: 28px 0; border-top: 1px solid rgba(148,163,184,0.1);
+      background: linear-gradient(0deg, rgba(2,6,23,0.35), transparent);
+    }
+    .footer-grid { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .empty { padding: 14px; border: 1px dashed rgba(148,163,184,0.25); border-radius: 12px; }
+
+    /* Experiencia: acordeón */
+    .exp-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .exp-item {
+      border: 1px solid rgba(148,163,184,0.2);
+      border-radius: 12px;
+      background: var(--card);
+      overflow: hidden;
+    }
+
+    .exp-item summary {
+      list-style: none; /* ocultar marcador nativo */
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 16px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .exp-item summary::-webkit-details-marker { display: none; }
+
+    .exp-item .row-top {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .exp-company {
+      font-weight: 700;
+      color: var(--text);
+    }
+    .exp-period {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .exp-caret {
+      width: 18px; height: 18px;
+      display: inline-block;
+      border: 2px solid var(--muted);
+      border-left: 0; border-top: 0;
+      transform: rotate(-45deg);
+      transition: transform .2s ease, border-color .2s ease;
+    }
+    .exp-item[open] .exp-caret {
+      transform: rotate(135deg);
+      border-color: var(--primary);
+    }
+
+    .exp-body {
+      padding: 0 16px 14px 16px;
+      border-top: 1px dashed rgba(148,163,184,0.25);
+    }
+
+    .exp-role { margin: 12px 0 2px; font-weight: 600; }
+    .exp-loc { color: var(--muted); font-size: 13px; }
+
+    .exp-points {
+      margin: 8px 0 0 16px;
+      color: var(--text);
+      opacity: .95;
+    }
+    .exp-links {
+      margin-top: 10px;
+      display: flex; gap: 8px; flex-wrap: wrap;
+    }
+    .exp-link {
+      font-size: 13px;
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid rgba(148,163,184,0.25);
+      padding: 6px 10px; border-radius: 999px;
+    }
+    .exp-link:hover { border-color: rgba(148,163,184,0.45); }
+
+    /* foco accesible en summary */
+    .exp-item summary:focus-visible {
+      outline: 3px solid var(--ring);
+      outline-offset: 2px;
+    }
+
+    :focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+  </style>
 </head>
 
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-<!-- Loader -->
-<div id="page-loader">
-    <svg class="loader" width="32px" height="32px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="5" stroke-linecap="round" cx="32" cy="32" r="32"></circle></svg>
-</div>
-<!-- Loader / End -->
-
-<!-- Header -->
-<header id="header" class="header-vertical dark">
-
-    <!-- Photo -->
-    <a href="index-2.html" class="photo">
-        <img src="assets/img/avatars/profile.jpg" alt="">
-    </a> 
-
-    <!-- Navigation -->
-    <nav id="main-menu">
-        <ul class="nav nav-vertical">
-            <li><a href="#start"><i class="pe-7s-home"></i><span>Start</span></a></li>
-            <li><a href="#resume"><i class="pe-7s-ribbon"></i><span>Resume</span></a></li>
-            <li><a href="#portfolio"><i class="pe-7s-monitor"></i><span>Portfolio</span></a></li>
-<!--            <li><a href="#clients"><i class="pe-7s-comment"></i><span>Clients</span></a></li>-->
-<!--            <li><a href="#latest-posts"><i class="pe-7s-copy-file"></i><span>Latest Posts</span></a></li>-->
-            <li><a href="#contact"><i class="pe-7s-mail"></i><span>Contact</span></a></li>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="brand">E. Incio</a>
+      <nav class="main-nav" aria-label="Principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menú</button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><button id="theme-toggle" class="btn btn-ghost" aria-label="Cambiar tema">🌓</button></li>
         </ul>
-        <span class="selector"></span>
-    </nav>
-
-    <!-- Bottom -->
-    <div class="bottom text-center">
-        <ul class="nav-icons nav-sm">
-            <li><a href="https://www.facebook.com/enrique.chapilliquen"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://www.twitter.com/enriqueincioch"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="http://www.linkedin.com/in/enriqueincioch"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
+      </nav>
     </div>
+  </header>
 
-</header>
-<!-- Header / End -->
+  <main id="contenido">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="kicker">Hola, soy</span>
+          <h1 id="user-name">Enrique Incio</h1>
+          <p id="user-bio" class="lead">Diseño, construyo y despliego software moderno. Me enfoco en calidad, automatización y experiencia de usuario.</p>
 
-<!-- Content -->
-<div id="content">
+          <div class="hero-cta">
+            <a id="cta-cv" class="btn btn-primary" href="assets/files/cv_thony_actualizado.pdf" target="_blank" rel="noopener">Descargar CV</a>
+            <a class="btn btn-ghost" href="#contacto">Contactar</a>
+            <a id="cta-github" class="btn btn-ghost" href="https://github.com/eincioch" target="_blank" rel="noopener" aria-label="GitHub">🐙 GitHub</a>
+          </div>
 
-    <!-- Section - Start -->
-    <section id="start" class="section fullheight dark bg-dark">
-
-        <!-- BG Image -->
-        <div class="bg-image zooming"><img src="assets/img/photos/fondo03.jpg" style="margin: 100px;" alt=""></div>
-        
-        <div class="container container-custom v-center">
-            <a href="#" class="btn-play btn-lg mb-30" data-toggle="video-modal" data-target="#modalVideo" >
-            <span style="width:80px;text-align: center;position:absolute;color:white;font-size: 12px;bottom:30px;left:50%;transform:translate(-50%, 0)">Demo</span>
-            </a>
-            
-            
-            <h1 class="text-lg mb-0"><em>Hola! soy</em> Enrique Incio Chapilliquen</h1>
-            <p class="lead text-muted">Fullstack Developer </p>
+          <ul id="user-meta" class="meta">
+            <li id="user-location">🌍 —</li>
+            <li id="user-company">🏢 —</li>
+            <li id="user-blog">🔗 —</li>
+            <li id="user-followers">👥 —</li>
+          </ul>
         </div>
 
+        <div class="hero-photo">
+          <div class="photo-frame">
+            <img id="user-avatar" src="assets/img/avatars/profile.jpg" alt="Foto de perfil" width="360" height="360" />
+          </div>
+        </div>
+      </div>
+      <div class="hero-bg"></div>
     </section>
 
-    <!-- Section - Resume -->
-    <section id="resume" class="section">
-        
-        <div class="container container-custom">
-            <p class="lead text-muted ">Soy un Ingeniero de aplicaciones certificado de Android. He estado trabajando como desarrollador de software por alrededor de 7 años hasta ahora. Trabajo con múltiples tecnologías
-                y me adapto a cada requisito. Aprecio el buen diseño y agrego valor a las diferentes fases de
-                el ciclo de vida del desarrollo de software. Si no sé cómo hacer algo, ¡asegúrese de aprender lo más rápido posible!
-            
-            </p>
-            
-            
-            <div class="masonry-item col-sm-6 col-xs-12" style="align-content: center;">
-                <div class="resume-card" style="align-content: center;">
-                    <div class="row" style="align-content: center;">
-                        <div class="col-sm-4" >
-                            <div class="mb-80" style="text-align: center;">
-                                <img src="assets/img/photos/visual-studio-2013-logo_2.png" style="height: 70px;" />
-                            </div>
-                        </div>
-                   
-                        <div class="col-sm-4">
-                            <div class="mb-80" style="text-align: center;">
-                                <img src="assets/img/photos/Azure_.png" style="height: 70px;" />
-                            </div>
-                        </div>
-                    
-                    
-                        <div class="col-sm-4">
-                            <div class="mb-80" style="text-align: center;">
-                                <img src="assets/img/photos/Icono_de_Android.png" style="height: 70px;" />
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <br><br><br>
-                    
-            <button class="round-button-blue" id="btn-download-cv">Descarga mi CV</button>
-            <br><br><br>
-
-            <div class="row masonry long-spaces">
-                <div class="masonry-sizer col-sm-6 col-xs-12"></div>
-                <!-- Specialities -->
-                <div class="masonry-item col-sm-6 col-xs-12">
-                    <div class="resume-card">
-                        <h3 class="title">Mis especialidades</h3>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <!-- Feature -->
-                                
-                                 <div class="feature feature-2">
-                                    <span class="icon icon-primary"><i class="pe-7s-phone"></i></span>
-                                    <div class="feature-content">
-                                        <h4>Mobile Apps</h4>
-                                    </div>
-                                </div>
-                                
-                                
-                                <div class="feature feature-2">
-                                    <span class="icon icon-primary"><i class="pe-7s-ribbon"></i></span>
-                                    <div class="feature-content">
-                                        <h4>Visual Studio C#</h4>
-                                    </div>
-                                </div>
-                                <!-- Feature -->
-                               
-                            </div>
-                            <div class="col-lg-6">
-                                <!-- Feature -->
-                                <div class="feature feature-2">
-                                    <span class="icon icon-primary"><i class="pe-7s-monitor"></i></span>
-                                    <div class="feature-content">
-                                        <h4>Web Apps</h4>
-                                    </div>
-                                </div>
-                                <!-- Feature -->
-                                <div class="feature feature-2">
-                                    <span class="icon icon-primary"><i class="pe-7s-monitor"></i></span>
-                                    <div class="feature-content">
-                                        <h4>Apps Windows</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Skills -->
-                <div class="masonry-item col-sm-6 col-xs-12">
-                    <div class="resume-card">
-                        <h3 class="title">Habilidades</h3>
-                        <!-- Skill -->
-                        <div class="skill">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="100"></div>
-                            </div>
-                            <h5>Mobile</h5>
-                        </div>
-                        <!-- Skill -->
-                        <div class="skill">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="100"></div>
-                            </div>
-                            <h5>Web/Desktop</h5>
-                        </div>
-                        <!-- Skill -->
-                        <div class="skill">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70"></div>
-                            </div>
-                            <h5>Web Services, REST API</h5>
-                        </div>
-                        <!-- Skill -->
-                        <div class="skill">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="50"></div>
-                            </div>
-                            <h5>Cross Platform</h5>
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-                <!-- Languages -->
-                <div class="masonry-item col-sm-6 col-xs-12">
-                    <div class="resume-card">
-                        <h3 class="title">Languages</h3>
-                        <!-- Skill -->
-                        <div class="skill">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="100"></div>
-                            </div>
-                            <h5>Español</h5>
-                        </div>
-                        <!-- Skill -->
-                        <div class="skill">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70"></div>
-                            </div>
-                            <h5>English</h5>
-                        </div>
-                       
-                        
-                    </div>
-                </div>
-                <!-- Educatin & Jobs -->
-                <div class="masonry-item col-sm-6 col-xs-12">
-                    <div class="resume-card">
-                        <h3 class="title">Experiencia laboral</h3>
-                        <div class="timeline">
-                            <!-- Event-->
-                            <div class="timeline-event animated">
-                                <div class="content">
-                                    <span class="date">(Junio 2017 – Actualmente)</span>
-                                    <h4>Android Developer</h4>
-                                    <span class="caption">Universidad César Vallejo</span>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline-event animated">
-                                    <div class="content">
-                                        <span class="date">(Junio 2016 – Actualmente)</span>
-                                        <h4>Freelance Visual Studio &amp; Android Developer</h4>
-                                        <span class="caption">EV-Soft Consultores</span>
-                                    </div>
-                                </div>
-                            
-                            <div class="timeline-event animated">
-                                <div class="content">
-                                    <span class="date">(Junio 2015 – Mayo 2017)</span>
-                                    <h4>Visual Studio &amp; Android Developer</h4>
-                                    <span class="caption">Médica Laboratorio Clínico Especializado</span>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline-event animated">
-                                <div class="content">
-                                    <span class="date">(Septiembre 2013 – Mayo 2015)</span>
-                                    <h4>Freelance Android Developer</h4>
-                                    <span class="caption">Force Close</span>
-                                </div>
-                            </div>
-                            
-                            
-                            <div class="timeline-event animated">
-                                <div class="content">
-                                    <span class="date">(Mayo 2009 – Agosto 2013)</span>
-                                    <h4>Fullstack Developer</h4>
-                                    <span class="caption">Touring y Automovíl Clud del Perú</span>
-                                </div>
-                            </div>
-
-                            <div class="timeline-event animated">
-                                <div class="content">
-                                    <span class="date">(Septiembre 2007 – Mayo 2008)</span>
-                                    <h4>Fullstack Developer</h4>
-                                    <span class="caption">Inversiones TopiTio C.A. - Venezuela</span>
-                                </div>
-                            </div>
-                            
-                            <!-- Event-->
-<!--
-                            <div class="timeline-event animated">
-                                <div class="content">
-                                    <img src="assets/img/photos/london.jpg" alt="" class="img-rounded">
-                                    <span class="date">08.2010 - 09.2011</span>
-                                    <h4>Webdesigner &amp; Front End Developer</h4>
-                                    <span class="caption">Envato, Sydney, Australia</span>
-                                </div>
-                            </div>
--->
-                            <!-- Event-->
-<!--
-                            <div class="timeline-event animated">
-                                <div class="content">
-                                    <span class="date">08.2010 - 09.2011</span>
-                                    <h4>Front-End Developer</h4>
-                                    <span class="caption">Envato, Sydney, Australia</span>
-                                </div>
-                            </div>
--->
-                        </div>
-                    </div>
-                </div>
-                <!-- Hobbies -->
-                <div class="masonry-item col-sm-6 col-xs-12">
-                    <div class="resume-card">
-                        <h3 class="title">Hobbies &amp; Interests</h3>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <!-- Feature -->
-                                <div class="feature feature-1 text-center">
-                                    <span class="icon icon-primary"><i class="pe-7s-ball"></i></span>
-                                    <h4>Basketball</h4>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <!-- Feature -->
-                                <div class="feature feature-1 text-center">
-                                    <span class="icon icon-primary"><i class="pe-7s-headphones"></i></span>
-                                    <h4>Music</h4>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                    <!-- Feature -->
-                                    <div class="feature feature-1 text-center">
-                                        <span class="icon icon-primary"><i class="pe-7s-news-paper"></i></span>
-                                        <h4>History</h4>
-                                    </div>
-                            </div>
-                        </div>
-
-                        
-                        <div class="row">
-                            
-                            <div class="col-sm-4">
-                                <!-- Feature -->
-                                <div class="feature feature-1 text-center">
-                                    <span class="icon icon-primary"><i class="pe-7s-camera"></i></span>
-                                    <h4>Photos</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="section">
+      <div class="container">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy un ingeniero orientado a resultados. Me gusta convertir ideas en productos estables y elegantes,
+          priorizando simplicidad, rendimiento y buenas prácticas de ingeniería.
+        </p>
+      </div>
     </section>
 
-    <!-- Section - Portfolio -->
-    
-
-    <!-- Section - Clients -->
-    <!--<section id="clients" class="section bg-light">
-
-        <div class="container container-custom">
-            <h3 class="text-center mb-80">What clients say?</h3>
-            <div class="row masonry">
-                <div class="masonry-sizer col-sm-6 col-xs-12"></div>
-                <div class="masonry-item col-sm-6 col-xs-12">
-                
-                    <blockquote class="animated" data-animation="fadeIn">
-                        <p>Sed lacinia, nibh sit amet auctor vestibulum, enim risus condimentum erat, quis vestibulum mi ligula a nulla. Nulla vitae pharetra tellus.Aenean ac tincidunt augue, volutpat ullamcorper elit.</p>
-                        <footer>
-                            <img src="assets/img/avatars/avatar01.jpg" alt="">
-                            <div class="content">
-                                <span class="name">Jerry Nowak</span>
-                                <div class="caption">CEO at Google Inc.</div>
-                            </div>
-                        </footer>
-                    </blockquote>
-                </div>
-                <div class="masonry-item col-sm-6 col-xs-12">
-                    
-                    <blockquote class="animated" data-animation="fadeIn">
-                        <p>Quis vestibulum mi ligula a nulla. Nulla vitae pharetra tellus. Aenean ac tincidunt augue, volutpat ullamcorper elit.</p>
-                        <footer>
-                            <div class="content">
-                                <span class="name">Jerry Nowak</span>
-                                <div class="caption">CEO at Google Inc.</div>
-                            </div>
-                        </footer>
-                    </blockquote>
-                </div>
-                <div class="masonry-item col-sm-6 col-xs-12">
-                    
-                    <blockquote class="animated" data-animation="fadeIn">
-                        <p>Nibh sit amet auctor vestibulum, enim risus condimentum erat, quis vestibulum mi ligula a nulla. Nulla vitae pharetra tellus.Aenean ac tincidunt augue, volutpat.</p>
-                        <footer>
-                            <img src="assets/img/avatars/avatar02.jpg" alt="">
-                            <div class="content">
-                                <span class="name">Jerry Nowak</span>
-                                <div class="caption">CEO at Google Inc.</div>
-                            </div>
-                        </footer>
-                    </blockquote>
-                </div>
-                <div class="masonry-item col-sm-6 col-xs-12">
-                    
-                    <blockquote class="animated" data-animation="fadeIn">
-                        <p>Enim risus condimentum erat, quis vestibulum mi ligula a nulla. Nulla vitae pharetra tellus.Aenean ac tincidunt augue, volutpat ullamcorper elit.</p>
-                        <footer>
-                            <img src="assets/img/avatars/avatar03.jpg" alt="">
-                            <div class="content">
-                                <span class="name">Jerry Nowak</span>
-                                <div class="caption">CEO at Google Inc.</div>
-                            </div>
-                        </footer>
-                    </blockquote>
-                </div>
-                <div class="masonry-item col-sm-6 col-xs-12">
-                    
-                    <blockquote class="animated" data-animation="fadeIn">
-                        <p>Sed lacinia, nibh sit amet auctor vestibulum, enim risus condimentum erat, quis vestibulum mi ligula a nulla. Nulla vitae pharetra tellus.Aenean ac tincidunt augue, volutpat ullamcorper elit.</p>
-                        <footer>
-                            <img src="assets/img/avatars/avatar05.jpg" alt="">
-                            <div class="content">
-                                <span class="name">Jerry Nowak</span>
-                                <div class="caption">CEO at Google Inc.</div>
-                            </div>
-                        </footer>
-                    </blockquote>
-                </div>
-                <div class="masonry-item col-sm-6 col-xs-12">
-                    
-                    <blockquote class="animated" data-animation="fadeIn">
-                        <p>Nulla vitae pharetra tellus. Aenean ac tincidunt augue, volutpat ullamcorper elit.</p>
-                        <footer>
-                            <img src="assets/img/avatars/avatar04.jpg" alt="">
-                            <div class="content">
-                                <span class="name">Jerry Nowak</span>
-                                <div class="caption">CEO at Google Inc.</div>
-                            </div>
-                        </footer>
-                    </blockquote>
-                </div>
-            </div>
+    <!-- Proyectos (GitHub) -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Proyectos recientes</h2>
+          <p class="muted">Se cargan desde GitHub (repos más activos y con más estrellas).</p>
         </div>
 
-    </section>-->
-
-    <!-- Section - Latest Posts -->
-<!--
-    <section id="latest-posts" class="section">
-        <div class="container container-custom">
-            <h3 class="text-center mb-80">Latest Posts</h3>
-          
-            <article class="post item">
-                <div class="post-image"><img src="assets/img/posts/post01.jpg" alt=""></div>
-                <div class="post-content">
-                    <ul class="post-meta">
-                        <li>24 July, 2016</li>
-                        <li>by Johnatan Doe</li>
-                    </ul>
-                    <h4><a href="blog-post.html">How to find developer to your team?</a></h4>
-                    <p>Nulla leo lectus, commodo porttitor lacus a, placerat facilisis ligula.</p>
-                </div>
-            </article>
-            
-            <article class="post item">
-                <div class="post-image"><img src="assets/img/posts/post02.jpg" alt=""></div>
-                <div class="post-content">
-                    <div>
-                        <ul class="post-meta">
-                            <li>24 July, 2016</li>
-                            <li>by Johnatan Doe</li>
-                        </ul>
-                        <h4><a href="blog-post.html">Crazy idea about the most popular search engine</a></h4>
-                        <p>Nulla leo lectus, commodo porttitor lacus a, placerat facilisis ligula.</p>
-                    </div>
-                </div>
-            </article>
-            
-            <article class="post item">
-                <div class="post-image"><img src="assets/img/posts/post03.jpg" alt=""></div>
-                <div class="post-content">
-                    <ul class="post-meta">
-                        <li>24 July, 2016</li>
-                        <li>by Johnatan Doe</li>
-                    </ul>
-                    <h4><a href="blog-post.html">Could Brexit trigger European stock crash?</a></h4>
-                    <p>Nulla leo lectus, commodo porttitor lacus a, placerat facilisis ligula.</p>
-                </div>
-            </article>
-            <div class="text-center mt-60">
-                <a href="blog.html" class="btn btn-primary">Go to my blog</a>
-            </div>
+        <div id="repos-grid" class="grid"></div>
+        <div id="repos-empty" class="empty muted" hidden>
+          Aún no cargamos proyectos. Revisa tu conexión o el límite de la API de GitHub.
         </div>
 
-    </section>
--->
-
-    <!-- Section - Contact -->
-    <section id="contact" class="section min-fullheight">
-
-        <!-- BG Image -->
-        <div id="google-map" data-latitude="-8.080387767188297" data-longitude="-79.05362374117243" data-style="dream" class="bg-map"></div>
-
-        <div class="container container-custom">
-            <div class="contact-box bg-primary dark animated" data-animation="fadeInDown" data-animation-delay="500">
-                <div class="contact-box-content">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2 class="mb-50"><em>No dudes en </em> contáctarme!</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="feature feature-1">
-                                <div class="icon"><span class="ti-desktop"></span></div>
-                                <a href="#" class="h3 font-primary" style="font-size: 18px;">enrique.incio@evsoftconsultores.com</a>
-                                <a href="#" class="h3 font-primary" style="font-size: 18px;">enrique.incio@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="feature feature-1">
-                                <div class="icon"><span class="ti-mobile"></span></div>
-                                <a href="#" class="h3 font-primary" style="font-size: 18px;"><small></small> +51986687645</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="feature feature-1">
-                                <div class="icon"><span class="ti-location-arrow"></span></div>
-                                <address style="font-size: 18px;">
-                                    
-                                    Vivo en Trujillo, La Libertad<br>
-                                    Perú
-                                </address>
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="sep-line">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <h5 class="mt-5">¡Mira mis redes sociales!</h5>
-                        </div>
-                        <div class="col-sm-6 text-right">
-                            <ul class="nav-icons">
-                                <li><a href="https://www.facebook.com/enrique.chapilliquen"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://www.twitter.com/enriqueincioch"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="http://www.linkedin.com/in/enriqueincioch"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="contact-toggle"></a>
-            </div>
+        <div class="section-cta" style="margin-top:16px">
+          <a id="more-projects" class="btn btn-outline" href="https://github.com/eincioch?tab=repositories" target="_blank" rel="noopener">Ver más en GitHub</a>
         </div>
-
+      </div>
     </section>
 
-</div>
-<!-- Content / End -->
+    <!-- Skills (lenguajes inferidos) -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills y herramientas</h2>
+        <p class="muted">Estimados desde los lenguajes de tus repos públicos.</p>
+        <div id="skills-list" class="chips"></div>
+      </div>
+    </section>
 
-<!-- Mobile Nav Toggle -->
-<a href="#" id="vertical-nav-toggle" class="nav-toggle" data-toggle="mobile-nav"><span><span></span></span></a>
+    <!-- Experiencia (acordeón) -->
+    <section id="experiencia" class="section">
+      <div class="container">
+        <h2>Experiencia</h2>
+        <div id="experience-list" class="exp-list" role="list"></div>
+      </div>
+    </section>
 
-<!-- Contact Popup Controls -->
-<div class="contact-popup-ctrl">
-    <a href="#" class="contact-popup-toggle" data-toggle="contact-popup"><span class="typing" data-text='["¿Tengo una pregunta?","¡Escríbeme!"]'>¡Escríbeme!</span></a>
-    <a href="#" class="contact-popup-close" data-toggle="contact-popup"><i class="ti-close"></i></a>
-</div>
-<!-- Contact Popup -->
-<div id="contact-popup" class="contact-popup dark">
-    <div class="v-center row">
-        <div class="col-lg-6 col-md-9">
-            <form id="contact-form" class="validate-form">
-                <div class="head">
-                    <span class="form-status">1/2</span>
-                    <h3>¡Escríbeme!</h3>
-                </div>
-                <div class="steps">
-                    <!-- Form Step -->
-                    <div class="step active" data-step="1">
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <input id="name" name="name" type="text" class="form-control" placeholder="Your name" required>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input id="email" name="email" type="text" class="form-control" placeholder="Your e-mail" required>
-                            </div>
-                        </div>
-                        <div class="bottom clearfix">
-                            <nav class="controls">
-                                <a href="#" class="btn btn-white" data-target="form-next-step">Próximo paso<i class="i-after ti-arrow-right"></i></a>
-                            </nav>
-                        </div>
-                    </div>
-                    <!-- Form Step -->
-                    <div class="step" data-step="2">
-                        <textarea name="message" id="message" rows="3" class="form-control" placeholder="Tap here your message..." required></textarea>
-                        <div class="bottom clearfix">
-                            <div class="info"><span>de</span> <em id="sender"></em></div>
-                            <nav class="controls">
-                                <button class="btn btn-link" data-target="form-prev-step"><i class="i-after ti-angle-left"></i></button>
-                                <button type="submit" class="btn btn-white btn-submit" onclick="enviarCorreo()"><span>¡Enviar un mensaje! <i class="i-after ti-check"></i></span></button>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
+    <!-- Fallback opcional (puedes dejarlo o eliminarlo)
+    <script type="application/json" id="experience-data">[ ... ]</script>
+    -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <small>© <span id="year"></span> Enrique Incio. Hecho con cariño y buenas prácticas.</small>
+      <small class="muted">Modo <span id="theme-label">claro</span>. Lighthouse ready.</small>
     </div>
-</div>
+  </footer>
 
-<!-- Ajax Modal -->
-<div id="ajax-modal"></div>
-<!-- Ajax Close -->
-<a href="#" class="ajax-close" data-dismiss="ajax-modal"><i class="ti-close"></i></a>
-<!-- Ajax Loader -->
-<svg id="ajax-loader" class="loader" width="32px" height="32px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="5" stroke-linecap="round" cx="32" cy="32" r="32"></circle></svg>
+  <script>
+  (function () {
+    const GITHUB_USER = 'eincioch';
+    const $ = (sel, root = document) => root.querySelector(sel);
 
-<!-- Modal / Video -->
-<div class="modal modal-video fade" id="modalVideo" role="dialog">
-    <button class="close" data-dismiss="modal"><i class="ti-close"></i></button>
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <iframe width="560" height="450" src="#" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-    </div>
-</div>
+    document.addEventListener('DOMContentLoaded', init);
 
-<!-- JS Libraries -->
-<script src="assets/js/jquery-1.12.4.min.js"></script>
+    async function init() {
+      // Año
+      const yearEl = $('#year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-<!-- JS Plugins -->
-<script src="assets/js/plugins.js"></script>
+      // Nav móvil
+      setupNavToggle();
 
-<!-- JS Core -->
-<script src="assets/js/core.js"></script>
+      // Tema
+      setupTheme();
 
-<!-- JS Google Map -->
-<script src="http://maps.google.com/maps/api/js?key=AIzaSyAwvtXlvbJsM_nPKfjJU0-q0SlU6UAMeCw"></script>
+      // Experiencia
+      renderExperience();
 
-    <script>
-        
-        $(document).ready(function(){
-            
-            $("#btn-download-cv").click(function(){
-                
-                 window.location.href = "assets/files/CV-2018-Enrique-Incio-986687645.pdf";
+      // GitHub
+      await loadGitHub();
 
-            })
+      document.documentElement.classList.remove('no-js');
+    }
+
+    function setupNavToggle() {
+      const btn = document.querySelector('.nav-toggle');
+      const list = document.getElementById('nav-links');
+      if (!btn || !list) return;
+      btn.addEventListener('click', () => {
+        const open = list.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(open));
+      });
+    }
+
+    function setupTheme() {
+      const toggle = document.getElementById('theme-toggle');
+      const label = document.getElementById('theme-label');
+      const metaTheme = document.querySelector('meta[name="theme-color"]');
+
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const saved = localStorage.getItem('theme'); // 'dark' | 'light' | null
+      const initial = saved || (prefersDark ? 'dark' : 'light');
+      applyTheme(initial);
+
+      if (toggle) {
+        toggle.setAttribute('aria-pressed', initial === 'dark' ? 'true' : 'false');
+        toggle.addEventListener('click', () => {
+          const next = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+          applyTheme(next);
+          localStorage.setItem('theme', next);
+          toggle.setAttribute('aria-pressed', next === 'dark' ? 'true' : 'false');
         });
-        
-    </script>
+      }
 
+      function applyTheme(mode) {
+        if (mode === 'dark') {
+          document.documentElement.classList.add('dark');
+          if (label) label.textContent = 'oscuro';
+          if (metaTheme) metaTheme.setAttribute('content', '#0b1220');
+        } else {
+          document.documentElement.classList.remove('dark');
+          if (label) label.textContent = 'claro';
+          if (metaTheme) metaTheme.setAttribute('content', '#f8fafc');
+        }
+      }
+    }
+
+    async function loadGitHub() {
+      const userUrl = `https://api.github.com/users/${GITHUB_USER}`;
+      const reposUrl = `https://api.github.com/users/${GITHUB_USER}/repos?per_page=100&sort=updated`;
+      try {
+        const [userRes, reposRes] = await Promise.all([
+          fetch(userUrl, { headers: { 'Accept': 'application/vnd.github+json' } }),
+          fetch(reposUrl, { headers: { 'Accept': 'application/vnd.github+json' } })
+        ]);
+        if (!userRes.ok) throw new Error(`GitHub user error: ${userRes.status}`);
+        if (!reposRes.ok) throw new Error(`GitHub repos error: ${reposRes.status}`);
+
+        const user = await userRes.json();
+        const repos = await reposRes.json();
+
+        renderUser(user);
+        renderRepos(repos);
+        renderSkills(repos);
+        renderContacts(user);
+      } catch (err) {
+        console.warn('GitHub fetch failed:', err);
+        const empty = document.getElementById('repos-empty');
+        if (empty) empty.hidden = false;
+      }
+    }
+
+    function renderUser(user) {
+      const name = document.getElementById('user-name');
+      if (name) name.textContent = user.name || user.login || 'Perfil';
+      const bio = document.getElementById('user-bio');
+      if (bio) bio.textContent = user.bio || 'Creo software útil, simple y mantenible.';
+
+      const avatar = document.getElementById('user-avatar');
+      if (avatar && user.avatar_url) {
+        avatar.src = `${user.avatar_url}&s=360`;
+        avatar.alt = `Foto de ${user.name || user.login}`;
+        avatar.referrerPolicy = 'no-referrer';
+      }
+
+      const loc = document.getElementById('user-location');
+      if (loc) loc.textContent = user.location ? `🌍 ${user.location}` : '🌍 —';
+
+      const company = document.getElementById('user-company');
+      if (company) company.textContent = user.company ? `🏢 ${user.company}` : '🏢 —';
+
+      const blog = document.getElementById('user-blog');
+      if (blog) {
+        if (user.blog) {
+          blog.innerHTML = `🔗 <a href="${ensureHttp(user.blog)}" target="_blank" rel="noopener">Sitio</a>`;
+        } else {
+          blog.textContent = '🔗 —';
+        }
+      }
+
+      const followers = document.getElementById('user-followers');
+      if (followers) followers.textContent = typeof user.followers === 'number' ? `👥 ${user.followers} seguidores` : '👥 —';
+
+      const ghBtn = document.getElementById('cta-github');
+      if (ghBtn && user.html_url) ghBtn.href = user.html_url;
+    }
+
+    function renderRepos(repos) {
+      const grid = document.getElementById('repos-grid');
+      const empty = document.getElementById('repos-empty');
+      if (!grid) return;
+
+      const filtered = repos
+        .filter(r => !r.fork && !r.archived)
+        .sort((a, b) => {
+          const starDiff = (b.stargazers_count || 0) - (a.stargazers_count || 0);
+          if (starDiff !== 0) return starDiff;
+          return new Date(b.pushed_at) - new Date(a.pushed_at);
+        })
+        .slice(0, 6);
+
+      grid.innerHTML = '';
+
+      if (filtered.length === 0) {
+        if (empty) empty.hidden = false;
+        return;
+      }
+
+      for (const r of filtered) {
+        const card = document.createElement('a');
+        card.className = 'card';
+        card.href = r.homepage || r.html_url;
+        card.target = '_blank';
+        card.rel = 'noopener';
+
+        const title = document.createElement('h3');
+        title.textContent = r.name;
+
+        const desc = document.createElement('p');
+        desc.className = 'desc';
+        desc.textContent = r.description || 'Repositorio de GitHub';
+
+        const meta = document.createElement('div');
+        meta.className = 'meta-row';
+        meta.innerHTML = `
+          <span>⭐ ${r.stargazers_count || 0}</span>
+          <span>🍴 ${r.forks_count || 0}</span>
+          ${r.language ? `<span>💡 ${r.language}</span>` : ''}
+          <span>⏱️ ${timeAgo(r.pushed_at)}</span>
+        `;
+
+        card.appendChild(title);
+        card.appendChild(desc);
+        card.appendChild(meta);
+        grid.appendChild(card);
+      }
+    }
+
+    function renderSkills(repos) {
+      const holder = document.getElementById('skills-list');
+      if (!holder) return;
+
+      const counts = new Map();
+      repos.forEach(r => {
+        if (r.language) {
+          counts.set(r.language, (counts.get(r.language) || 0) + 1);
+        }
+      });
+
+      const top = [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 12);
+      holder.innerHTML = '';
+      if (top.length === 0) {
+        holder.innerHTML = '<span class="muted">No hay datos de lenguajes aún.</span>';
+        return;
+      }
+      for (const [lang, n] of top) {
+        const chip = document.createElement('span');
+        chip.className = 'chip';
+        chip.textContent = `${lang} · ${n}`;
+        holder.appendChild(chip);
+      }
+    }
+
+    function renderContacts(user) {
+      const siteLink = document.getElementById('contact-website');
+      const url = user.blog ? ensureHttp(user.blog) : null;
+      if (url && siteLink) {
+        siteLink.href = url;
+        siteLink.hidden = false;
+      }
+    }
+
+    function renderExperience() {
+      const list = document.getElementById('experience-list');
+      if (!list) return;
+
+      // Carga de JSON externo con fallback al inline
+      loadExperienceData()
+        .then(items => {
+          if (!Array.isArray(items) || items.length === 0) {
+            list.innerHTML = `<div class="empty muted">Aún no hay experiencias para mostrar.</div>`;
+            return;
+          }
+          list.innerHTML = '';
+          items.forEach((it, idx) => {
+            const details = document.createElement('details');
+            details.className = 'exp-item';
+            if (idx === 0) details.open = true; // abre primero por default
+
+            // Summary: Solo Empresa + Años
+            const summary = document.createElement('summary');
+            const top = document.createElement('div');
+            top.className = 'row-top';
+
+            const company = document.createElement('div');
+            company.className = 'exp-company';
+            company.textContent = it.company || '';
+
+            const period = document.createElement('div');
+            period.className = 'exp-period';
+            period.textContent = it.period || '';
+
+            top.appendChild(company);
+            top.appendChild(period);
+
+            const caret = document.createElement('span');
+            caret.className = 'exp-caret';
+            summary.appendChild(top);
+            summary.appendChild(caret);
+
+            // Body: Rol, ubicación, bullets y links
+            const body = document.createElement('div');
+            body.className = 'exp-body';
+
+            if (it.role) {
+              const role = document.createElement('div');
+              role.className = 'exp-role';
+              role.textContent = it.role;
+              body.appendChild(role);
+            }
+
+            if (it.location) {
+              const loc = document.createElement('div');
+              loc.className = 'exp-loc';
+              loc.textContent = it.location;
+              body.appendChild(loc);
+            }
+
+            if (Array.isArray(it.summary) && it.summary.length) {
+              const ul = document.createElement('ul');
+              ul.className = 'exp-points';
+              it.summary.forEach(s => {
+                const li = document.createElement('li');
+                li.textContent = s;
+                ul.appendChild(li);
+              });
+              body.appendChild(ul);
+            }
+
+            if (Array.isArray(it.links) && it.links.length) {
+              const links = document.createElement('div');
+              links.className = 'exp-links';
+              it.links.forEach(l => {
+                if (!l || !l.url) return;
+                const a = document.createElement('a');
+                a.className = 'exp-link';
+                a.href = ensureHttp(l.url);
+                a.target = '_blank';
+                a.rel = 'noopener';
+                a.textContent = l.label || 'Link';
+                links.appendChild(a);
+              });
+              body.appendChild(links);
+            }
+
+            details.appendChild(summary);
+            details.appendChild(body);
+            list.appendChild(details);
+          });
+        })
+        .catch(err => {
+          console.warn('Experiencia: error al renderizar', err);
+          list.innerHTML = `<div class="empty muted">No fue posible cargar la experiencia.</div>`;
+        });
+
+      async function loadExperienceData() {
+        // 1) Intentar externo
+        try {
+          const res = await fetch('assets/files/experience.json', { cache: 'no-store' });
+          if (res.ok) {
+            return await res.json();
+          }
+        } catch (e) {
+          console.debug('Fallo al cargar JSON externo, intentando fallback inline…', e);
+        }
+        // 2) Fallback inline
+        const inline = document.getElementById('experience-data');
+        if (inline && (inline.textContent || '').trim()) {
+          try {
+            return JSON.parse(inline.textContent.trim());
+          } catch (e) {
+            console.debug('JSON inline inválido.', e);
+          }
+        }
+        return [];
+      }
+    }
+
+    // Utils
+    function ensureHttp(url) {
+      if (!url) return url;
+      if (/^https?:\/\//i.test(url)) return url;
+      return `https://${url}`;
+    }
+    function timeAgo(iso) {
+      const d = new Date(iso);
+      const diff = (Date.now() - d.getTime()) / 1000;
+      const rtf = new Intl.RelativeTimeFormat('es', { numeric: 'auto' });
+      const units = [
+        ['year', 31536000],
+        ['month', 2592000],
+        ['week', 604800],
+        ['day', 86400],
+        ['hour', 3600],
+        ['minute', 60],
+        ['second', 1]
+      ];
+      for (const [unit, sec] of units) {
+        const val = Math.floor(diff / sec);
+        if (Math.abs(val) >= 1) return rtf.format(-val, unit);
+      }
+      return 'ahora';
+    }
+  })();
+  </script>
 </body>
-
-
-<!-- Mirrored from www.thonysupersonic.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Mar 2018 15:59:38 GMT -->
 </html>

@@ -1,0 +1,74 @@
+[
+  {
+    "company": "Universidad César Vallejo",
+    "period": "2017 – Presente",
+    "role": "Developer",
+    "location": "Trujillo, Perú",
+    "summary": [
+      "Desarrollo y mantenimiento de apps móviles.",
+      "Integración de servicios REST y despliegues continuos."
+    ],
+    "links": [
+      { "label": "Sitio", "url": "https://www.ucv.edu.pe/" }
+    ]
+  },
+  {
+    "company": "EV-Soft Consultores",
+    "period": "2016 – Presente",
+    "role": "Freelance Visual Studio & Android Developer",
+    "location": "Perú",
+    "summary": [
+      "Soluciones a medida en .NET y Android.",
+      "Acompañamiento end-to-end: diseño, desarrollo y entrega."
+    ],
+    "links": []
+  },
+  {
+    "company": "Médica Laboratorio Clínico Especializado",
+    "period": "2015 – 2017",
+    "role": "Visual Studio & Android Developer",
+    "location": "Perú",
+    "summary": [
+      "Sistemas internos (desktop/web) y apps móviles.",
+      "Mejoras de rendimiento y automatización de procesos."
+    ],
+    "links": []
+  },
+  {
+    "company": "Universidad César Vallejo",
+    "period": "2013 – 2015",
+    "role": "Developer",
+    "location": "Perú",
+    "summary": [
+      "Aplicaciones móviles y prototipos rápidos.",
+      "Publicación y mantenimiento en tiendas."
+    ],
+    "links": [
+        { "label": "Sitio", "url": "https://www.ucv.edu.pe/" }
+    ]
+  },
+  {
+    "company": "Touring y Automóvil Club del Perú",
+    "period": "2009 – 2013",
+    "role": "Fullstack Developer",
+    "location": "Perú",
+    "summary": [
+      "Plataformas internas fullstack.",
+      "Soporte y evolución de sistemas críticos."
+    ],
+    "links": [
+        { "label": "Sitio", "url": "https://www.touring.pe/" }
+    ]
+  },
+  {
+    "company": "Inversiones Topi C.A.",
+    "period": "2007 – 2008",
+    "role": "Fullstack Developer",
+    "location": "Venezuela",
+    "summary": [
+      "Soluciones web y escritorio.",
+      "Integración con bases de datos y reportería."
+    ],
+    "links": []
+  }
+]
